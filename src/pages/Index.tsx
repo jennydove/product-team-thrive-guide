@@ -61,10 +61,10 @@ const Index = () => {
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   {[
                     { number: "01", title: "Infrastructure", desc: "The foundation that enables effective work", color: "crystal" },
-                    { number: "02", title: "Self-Improvement", desc: "The ability to evolve and adapt", color: "moss" },
-                    { number: "03", title: "Human Connection", desc: "The relationships that drive innovation", color: "sunflower" },
-                    { number: "04", title: "Decision Frameworks", desc: "The structures that enable clear choices", color: "navy" },
-                    { number: "05", title: "Strategic Focus", desc: "The capacity to work on what matters most", color: "rouge" },
+                    { number: "02", title: "Self-Improvement", desc: "The ability to evolve and adapt", color: "crystal" },
+                    { number: "03", title: "Human Connection", desc: "The relationships that drive innovation", color: "crystal" },
+                    { number: "04", title: "Decision Frameworks", desc: "The structures that enable clear choices", color: "crystal" },
+                    { number: "05", title: "Strategic Focus", desc: "The capacity to work on what matters most", color: "crystal" },
                     { number: "06", title: "Customer Centricity", desc: "The systems for staying focused on user needs", color: "crystal" },
                   ].map((system, index) => (
                     <div key={index} className={`p-6 rounded-xl bg-gradient-to-br from-${system.color}-100 to-${system.color}-200 border-l-4 border-${system.color}-500`}>
