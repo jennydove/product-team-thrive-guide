@@ -24,7 +24,7 @@ const Index = () => {
               Report Cover Image
             </div>
           </div>
-          <EmailCapture />
+          
         </div>
       </header>
 
@@ -384,9 +384,6 @@ const Index = () => {
                   <p className="mb-6">If you'd like to talk about how to approach this, please reach out. I'm always happy to have a complimentary consult to help get you unblocked as quickly as possible.</p>
                   <p className="mb-8">Remember: struggling teams keep adding processes hoping something will stick. Thriving teams build systems that make excellence the path of least resistance.</p>
                 </div>
-                <div className="text-center">
-                  <EmailCapture variant="dark" />
-                </div>
               </CardContent>
             </Card>
           </section>
@@ -435,7 +432,11 @@ const Index = () => {
                   <p className="mb-8 text-xl font-semibold text-center"><strong>Ready to move beyond band-aid solutions and build systems that actually work? Let's unlock your team's potential.</strong></p>
                 </div>
                 <div className="text-center">
-                  <EmailCapture variant="light" />
+                  <Button asChild className="bg-white text-sunflower-600 hover:bg-gray-100 px-8 py-3 text-lg font-semibold">
+                    <a href="https://www.jennywanger.com/subscribe" target="_blank" rel="noopener noreferrer">
+                      Subscribe to Newsletter
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
