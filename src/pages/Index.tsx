@@ -394,8 +394,14 @@ const Index = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold text-navy-900 mb-6">Keep Learning</h3>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                  <p className="mb-4">Building great product teams is challenging work. Join 1500+ product leaders getting weekly insights from <a href="https://www.jennywanger.com/subscribe" className="text-crystal-600 hover:text-crystal-700 font-medium">Jenny Wanger's newsletter</a>. It explores the different sides of product leadership that need to come together to create high-performing product teams.</p>
-                  <p className="mb-6">Subscribe to unlock your team's potential.</p>
+                  <p className="mb-6">Building great product teams is challenging work. Join 1500+ product leaders getting weekly insights from <a href="https://www.jennywanger.com/subscribe" className="text-crystal-600 hover:text-crystal-700 font-medium">Jenny Wanger's newsletter</a>. It explores the different sides of product leadership that need to come together to create high-performing product teams.</p>
+                </div>
+                <div className="text-center">
+                  <Button asChild className="bg-crystal-600 hover:bg-crystal-700 text-white px-8 py-3 text-lg font-semibold">
+                    <a href="https://www.jennywanger.com/subscribe" target="_blank" rel="noopener noreferrer">
+                      Subscribe to unlock your team's potential
+                    </a>
+                  </Button>
                 </div>
               </CardContent>
             </Card>
