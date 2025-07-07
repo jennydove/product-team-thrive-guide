@@ -257,7 +257,7 @@ const Index = () => {
                     <li>Choose an <a href="https://jennywanger.com/articles/product-operations-team-model/" className="text-navy-600 hover:text-navy-700 font-medium">operating model</a> that matches your organization's maturity and needs</li>
                     <li>Start small, measure impact, and scale what works</li>
                   </ol>
-                  <p className="mb-6">Want to learn how to create real clarity without stifling collaboration? Read more about modern approaches to product team decision-making.</p>
+                  <p className="mb-6">Want to learn how to create real clarity without stifling collaboration? Read <a href="https://jennywanger.com/articles/raci-charts-are-stifling-collaboration/" className="text-navy-600 hover:text-navy-700 font-medium">"RACI Charts Are Stifling Collaboration"</a> to discover why traditional frameworks often backfire and what to do instead.</p>
 
                   <h4 className="text-xl font-semibold text-navy-800 mt-8 mb-4">Read More</h4>
                   <ul className="list-disc pl-6 mb-6 space-y-2">
