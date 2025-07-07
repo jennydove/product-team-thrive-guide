@@ -61,10 +61,10 @@ const Index = () => {
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   {[
                     { number: "01", title: "Infrastructure", desc: "The foundation that enables effective work", color: "crystal" },
-                    { number: "02", title: "Self-Improvement", desc: "The ability to evolve and adapt", color: "crystal" },
-                    { number: "03", title: "Human Connection", desc: "The relationships that drive innovation", color: "crystal" },
-                    { number: "04", title: "Decision Frameworks", desc: "The structures that enable clear choices", color: "crystal" },
-                    { number: "05", title: "Strategic Focus", desc: "The capacity to work on what matters most", color: "crystal" },
+                    { number: "02", title: "Self-Improvement", desc: "The ability to evolve and adapt", color: "moss" },
+                    { number: "03", title: "Human Connection", desc: "The relationships that drive innovation", color: "sunflower" },
+                    { number: "04", title: "Decision Frameworks", desc: "The structures that enable clear choices", color: "navy" },
+                    { number: "05", title: "Strategic Focus", desc: "The capacity to work on what matters most", color: "rouge" },
                     { number: "06", title: "Customer Centricity", desc: "The systems for staying focused on user needs", color: "crystal" },
                   ].map((system, index) => (
                     <div key={index} className={`p-6 rounded-xl bg-gradient-to-br from-${system.color}-100 to-${system.color}-200 border-l-4 border-${system.color}-500`}>
@@ -81,7 +81,7 @@ const Index = () => {
 
           {/* System 1: Infrastructure */}
           <section className="mb-16">
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+            <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Build Infrastructure Beyond Tools</h2>
                 <div className="w-full h-64 mb-6 bg-gradient-to-r from-crystal-300 to-crystal-400 rounded-xl shadow-lg">
@@ -128,7 +128,7 @@ const Index = () => {
 
           {/* System 2: Self-Improvement */}
           <section className="mb-16">
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+            <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-moss-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Self-Improvement</h2>
                 <div className="w-full h-64 mb-6 bg-gradient-to-r from-moss-300 to-moss-400 rounded-xl shadow-lg">
@@ -171,7 +171,7 @@ const Index = () => {
 
           {/* System 3: Human Connection */}
           <section className="mb-16">
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+            <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-sunflower-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Prioritize Human Connection</h2>
                 <div className="w-full h-64 mb-6 bg-gradient-to-r from-sunflower-300 to-sunflower-400 rounded-xl shadow-lg">
@@ -217,7 +217,7 @@ const Index = () => {
 
           {/* System 4: Decision Frameworks */}
           <section className="mb-16">
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+            <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-navy-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Create Clear Decision Frameworks</h2>
                 <div className="w-full h-64 mb-6 bg-gradient-to-r from-navy-300 to-navy-400 rounded-xl shadow-lg">
@@ -273,7 +273,7 @@ const Index = () => {
 
           {/* System 5: Strategic Focus */}
           <section className="mb-16">
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+            <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-rouge-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Enable Strategic Focus</h2>
                 <div className="w-full h-64 mb-6 bg-gradient-to-r from-rouge-300 to-rouge-400 rounded-xl shadow-lg">
@@ -319,7 +319,7 @@ const Index = () => {
 
           {/* System 6: Customer Centricity */}
           <section className="mb-16">
-            <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
+            <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Customer Centricity</h2>
                 <div className="w-full h-64 mb-6 bg-gradient-to-r from-crystal-300 to-crystal-500 rounded-xl shadow-lg">
