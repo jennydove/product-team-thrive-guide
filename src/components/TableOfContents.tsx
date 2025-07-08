@@ -62,7 +62,7 @@ export default function TableOfContents({ className = "" }: TableOfContentsProps
         <div className="p-4">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-medium text-gray-600 uppercase tracking-wide">
-              Contents
+              Table of Contents
             </span>
             <Button
               variant="ghost"
