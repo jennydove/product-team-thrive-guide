@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -55,7 +56,7 @@ export default function TableOfContents({ className = "" }: TableOfContentsProps
   };
 
   return (
-    <div className={`fixed right-6 top-1/2 -translate-y-1/2 z-30 transition-all duration-300 ${className}`}>
+    <div className={`hidden md:block fixed right-6 top-1/2 -translate-y-1/2 z-30 transition-all duration-300 ${className}`}>
       <Card className="bg-white/95 backdrop-blur-sm border shadow-lg max-w-xs">
         <div className="p-4">
           <div className="flex items-center justify-between mb-3">
