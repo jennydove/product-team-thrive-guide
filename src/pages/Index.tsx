@@ -29,7 +29,7 @@ const Index = () => {
       </header>
 
       {/* Main Content */}
-      <main className="relative z-10 px-6 py-12 ml-80">
+      <main className="relative z-10 px-6 py-12">
         <div className="max-w-4xl mx-auto">
           
           {/* Introduction */}
