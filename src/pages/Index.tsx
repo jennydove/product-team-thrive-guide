@@ -5,6 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import EmailCapture from "@/components/EmailCapture";
 import AbstractShapes from "@/components/AbstractShapes";
+import TableOfContents from "@/components/TableOfContents";
+import heroBanner from "@/assets/hero-banner.jpg";
 
 const Index = () => {
   const { toast } = useToast();
@@ -12,28 +14,26 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-sunflower-50 via-white to-crystal-50 font-raleway relative overflow-hidden">
       <AbstractShapes />
+      <TableOfContents />
       
-      {/* Header */}
-      <header className="relative z-10 px-6 py-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-navy-900 mb-6 leading-tight">
-            The Six Systems That Help Product Teams Thrive
-          </h1>
-          <div className="w-32 h-48 mx-auto mb-8 bg-gradient-to-br from-crystal-400 to-crystal-600 rounded-2xl shadow-lg">
-            <div className="w-full h-full flex items-center justify-center text-white font-medium">
-              Report Cover Image
-            </div>
+      {/* Hero Banner */}
+      <header className="relative z-10 h-96 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBanner})` }}>
+        <div className="absolute inset-0 bg-navy-900/40"></div>
+        <div className="relative z-10 h-full flex items-center justify-center px-6">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+              The Six Systems That Help Product Teams Thrive
+            </h1>
           </div>
-          
         </div>
       </header>
 
       {/* Main Content */}
-      <main className="relative z-10 px-6 py-12">
+      <main className="relative z-10 px-6 py-12 ml-80">
         <div className="max-w-4xl mx-auto">
           
           {/* Introduction */}
-          <section className="mb-16">
+          <section id="introduction" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Why band-aid solutions fail product teams</h2>
@@ -54,7 +54,7 @@ const Index = () => {
           </section>
 
           {/* Six Systems Overview */}
-          <section className="mb-16">
+          <section id="systems-overview" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
               <CardContent className="p-8">
                 <p className="text-lg text-gray-700 mb-8">Through my work transforming product organizations, I've identified six critical systems that determine a team's success:</p>
@@ -80,7 +80,7 @@ const Index = () => {
           </section>
 
           {/* System 1: Infrastructure */}
-          <section className="mb-16">
+          <section id="infrastructure" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Build Infrastructure Beyond Tools</h2>
@@ -127,7 +127,7 @@ const Index = () => {
           </section>
 
           {/* System 2: Self-Improvement */}
-          <section className="mb-16">
+          <section id="self-improvement" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-moss-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Self-Improvement</h2>
@@ -170,7 +170,7 @@ const Index = () => {
           </section>
 
           {/* System 3: Human Connection */}
-          <section className="mb-16">
+          <section id="human-connection" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-sunflower-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Prioritize Human Connection</h2>
@@ -216,7 +216,7 @@ const Index = () => {
           </section>
 
           {/* System 4: Decision Frameworks */}
-          <section className="mb-16">
+          <section id="decision-frameworks" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-navy-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Create Clear Decision Frameworks</h2>
@@ -272,7 +272,7 @@ const Index = () => {
           </section>
 
           {/* System 5: Strategic Focus */}
-          <section className="mb-16">
+          <section id="strategic-focus" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-rouge-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Enable Strategic Focus</h2>
@@ -318,7 +318,7 @@ const Index = () => {
           </section>
 
           {/* System 6: Customer Centricity */}
-          <section className="mb-16">
+          <section id="customer-centricity" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Customer Centricity</h2>
@@ -361,7 +361,7 @@ const Index = () => {
           </section>
 
           {/* Conclusion */}
-          <section className="mb-16">
+          <section id="conclusion" className="mb-16">
             <Card className="bg-gradient-to-br from-navy-900 to-navy-800 text-white border-0 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold mb-6">Build Your High-Performing Product Team</h2>
@@ -408,7 +408,7 @@ const Index = () => {
           </section>
 
           {/* About Jenny */}
-          <section className="mb-16">
+          <section id="about" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">About Jenny Wanger</h2>
