@@ -7,19 +7,20 @@ interface Section {
   id: string;
   title: string;
   color: string;
+  indentLevel?: number;
 }
 
 const sections: Section[] = [
-  { id: "introduction", title: "Why band-aid solutions fail", color: "rouge" },
-  { id: "systems-overview", title: "Six Systems Overview", color: "navy" },
-  { id: "infrastructure", title: "Build Infrastructure", color: "crystal" },
-  { id: "self-improvement", title: "Self-Improvement", color: "moss" },
-  { id: "human-connection", title: "Human Connection", color: "sunflower" },
-  { id: "decision-frameworks", title: "Decision Frameworks", color: "navy" },
-  { id: "strategic-focus", title: "Strategic Focus", color: "rouge" },
-  { id: "customer-centricity", title: "Customer Centricity", color: "crystal" },
-  { id: "conclusion", title: "Build Your Team", color: "navy" },
-  { id: "about", title: "About Jenny", color: "crystal" },
+  { id: "introduction", title: "Why band-aid solutions fail", color: "rouge", indentLevel: 0 },
+  { id: "systems-overview", title: "Six Systems Overview", color: "navy", indentLevel: 0 },
+  { id: "infrastructure", title: "Build Infrastructure", color: "crystal", indentLevel: 1 },
+  { id: "self-improvement", title: "Self-Improvement", color: "moss", indentLevel: 1 },
+  { id: "human-connection", title: "Human Connection", color: "sunflower", indentLevel: 1 },
+  { id: "decision-frameworks", title: "Decision Frameworks", color: "navy", indentLevel: 1 },
+  { id: "strategic-focus", title: "Strategic Focus", color: "rouge", indentLevel: 1 },
+  { id: "customer-centricity", title: "Customer Centricity", color: "crystal", indentLevel: 1 },
+  { id: "conclusion", title: "Build Your Team", color: "navy", indentLevel: 0 },
+  { id: "about", title: "About Jenny", color: "crystal", indentLevel: 0 },
 ];
 
 interface TableOfContentsProps {
@@ -32,14 +33,13 @@ export default function TableOfContents({ className = "" }: TableOfContentsProps
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = document.querySelectorAll('section[id]');
+      const sectionsOnPage = document.querySelectorAll('section[id]');
       const scrollPosition = window.scrollY + 100;
 
-      sections.forEach((section) => {
-        const sectionTop = (section as HTMLElement).offsetTop;
-        const sectionHeight = (section as HTMLElement).offsetHeight;
-        
-        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      sectionsOnPage.forEach((section) => {
+        const top = (section as HTMLElement).offsetTop;
+        const height = (section as HTMLElement).offsetHeight;
+        if (scrollPosition >= top && scrollPosition < top + height) {
           setActiveSection(section.id);
         }
       });
@@ -50,10 +50,8 @@ export default function TableOfContents({ className = "" }: TableOfContentsProps
   }, []);
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -70,44 +68,47 @@ export default function TableOfContents({ className = "" }: TableOfContentsProps
               onClick={() => setIsExpanded(!isExpanded)}
               className="h-6 w-6 p-0"
             >
-              {isExpanded ? (
-                <ChevronUp className="h-3 w-3" />
-              ) : (
-                <ChevronDown className="h-3 w-3" />
-              )}
+              {isExpanded ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
             </Button>
           </div>
 
-          {isExpanded && (
+          {isExpanded ? (
             <nav className="space-y-1 max-h-96 overflow-y-auto">
-              {sections.map((section) => (
-                <button
-                  key={section.id}
-                  onClick={() => scrollToSection(section.id)}
-                  className={`w-full text-left p-2 rounded text-xs transition-all duration-200 hover:bg-gray-50 ${
-                    activeSection === section.id 
-                      ? `bg-${section.color}-50 text-${section.color}-700 border-l-2 border-${section.color}-500` 
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                >
-                  <div className="flex items-center space-x-2">
-                    <div className={`w-1.5 h-1.5 rounded-full ${
-                      activeSection === section.id ? `bg-${section.color}-500` : 'bg-gray-300'
-                    }`} />
-                    <span className="leading-tight">
-                      {section.title}
-                    </span>
-                  </div>
-                </button>
-              ))}
-            </nav>
-          )}
+              {sections.map((section) => {
+                // calculate padding-left: base 2 (pl-2) + 4 * indentLevel
+                const level = section.indentLevel ?? 0;
+                const padding = 2 + level * 4;
+                const indentClass = `pl-${padding}`;
 
-          {!isExpanded && activeSection && (
+                const isActive = activeSection === section.id;
+                const baseClasses = `w-full text-left p-2 ${indentClass} rounded text-xs transition-all duration-200 hover:bg-gray-50`;
+                const activeClasses = isActive
+                  ? `bg-${section.color}-50 text-${section.color}-700 border-l-2 border-${section.color}-500`
+                  : `text-gray-600 hover:text-gray-900`;
+
+                return (
+                  <button
+                    key={section.id}
+                    onClick={() => scrollToSection(section.id)}
+                    className={`${baseClasses} ${activeClasses}`}
+                  >
+                    <div className="flex items-center space-x-2">
+                      <div
+                        className={`w-1.5 h-1.5 rounded-full ${
+                          isActive ? `bg-${section.color}-500` : 'bg-gray-300'
+                        }`}
+                      />
+                      <span className="leading-tight">{section.title}</span>
+                    </div>
+                  </button>
+                );
+              })}
+            </nav>
+          ) : activeSection ? (
             <div className="text-xs text-gray-500 truncate">
-              {sections.find(s => s.id === activeSection)?.title}
+              {sections.find((s) => s.id === activeSection)?.title}
             </div>
-          )}
+          ) : null}
         </div>
       </Card>
     </div>
