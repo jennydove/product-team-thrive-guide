@@ -93,7 +93,7 @@ const Index = () => {
                   <img 
                     src="/images/infrastructure.png" 
                     alt="Infrastructure systems illustration showing interconnected tools and processes" 
-                    className="w-full h-48 object-contain rounded-xl shadow-lg bg-gray-50"
+                    className="w-full h-64 object-cover rounded-xl shadow-lg"
                   />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -142,7 +142,7 @@ const Index = () => {
                   <img 
                     src="/images/self-improvement.png" 
                     alt="Self-improvement process illustration with feedback loops and team collaboration" 
-                    className="w-full h-56 object-contain rounded-xl shadow-lg bg-gray-50"
+                    className="w-full h-72 object-cover rounded-xl shadow-lg"
                   />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -187,7 +187,7 @@ const Index = () => {
                   <img 
                     src="/images/human-connection.png" 
                     alt="Human connection network illustration showing people collaborating and communicating" 
-                    className="w-full h-52 object-contain rounded-xl shadow-lg bg-gray-50"
+                    className="w-full h-60 object-cover rounded-xl shadow-lg"
                   />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -235,7 +235,7 @@ const Index = () => {
                   <img 
                     src="/images/decision-frameworks.png" 
                     alt="Decision framework diagram showing clear decision-making processes and structures" 
-                    className="w-full h-60 object-contain rounded-xl shadow-lg bg-gray-50"
+                    className="w-full h-80 object-cover rounded-xl shadow-lg"
                   />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -293,7 +293,7 @@ const Index = () => {
                   <img 
                     src="/images/strategic-focus.jpg" 
                     alt="Strategic focus visualization showing priority setting and goal alignment" 
-                    className="w-full h-44 object-contain rounded-xl shadow-lg bg-gray-50"
+                    className="w-full h-52 object-cover rounded-xl shadow-lg"
                   />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
@@ -341,7 +341,7 @@ const Index = () => {
                   <img 
                     src="/images/customer-centricity.png" 
                     alt="Customer-centric design illustration showing user feedback loops and customer journey mapping" 
-                    className="w-full h-50 object-contain rounded-xl shadow-lg bg-gray-50"
+                    className="w-full h-56 object-cover rounded-xl shadow-lg"
                   />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
