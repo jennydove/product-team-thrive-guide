@@ -43,11 +43,6 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Why band-aid solutions fail product teams</h2>
-                <div className="w-full h-48 mb-6 bg-gradient-to-r from-rouge-200 to-rouge-300 rounded-xl shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-rouge-800 font-medium">
-                    Band-aid Solutions Image
-                  </div>
-                </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-4">"We <a href="https://cutlefish.substack.com/p/tbm-283-just-and-but" className="text-crystal-600 hover:text-crystal-700 font-medium">just</a> need to implement RACI charts," the engineering director insisted. "That will fix our collaboration problems."</p>
                   <p className="mb-4">"Once everyone is trained on using RICE, prioritization will be less of a battle."</p>
@@ -95,10 +90,12 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Build Infrastructure Beyond Tools</h2>
-                <div className="w-full h-64 mb-6 bg-gradient-to-r from-crystal-300 to-crystal-400 rounded-xl shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-crystal-900 font-medium">
-                    Infrastructure Systems Image
-                  </div>
+                <div className="mb-6">
+                  <img 
+                    src="/images/infrastructure.png" 
+                    alt="Infrastructure systems illustration showing interconnected tools and processes" 
+                    className="w-full h-64 object-cover rounded-xl shadow-lg"
+                  />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-4">"We just need a better roadmapping tool." Sound familiar? Yet I've seen too many teams implement new tools and see no meaningful improvement in their performance (or even use of the tool). It takes more than a tool to change your <a href="https://jennywanger.com/articles/product-culture/" className="text-crystal-600 hover:text-crystal-700 font-medium">product culture</a>.</p>
@@ -142,10 +139,12 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-moss-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Self-Improvement</h2>
-                <div className="w-full h-64 mb-6 bg-gradient-to-r from-moss-300 to-moss-400 rounded-xl shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-moss-900 font-medium">
-                    Self-Improvement Process Image
-                  </div>
+                <div className="mb-6">
+                  <img 
+                    src="/images/self-improvement.png" 
+                    alt="Self-improvement process illustration with feedback loops and team collaboration" 
+                    className="w-full h-64 object-cover rounded-xl shadow-lg"
+                  />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-6">When product teams struggle, leaders often rush to implement solutions. But what if your team already knows what needs to change - they just need the right environment to make it happen?</p>
@@ -185,10 +184,12 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-sunflower-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Prioritize Human Connection</h2>
-                <div className="w-full h-64 mb-6 bg-gradient-to-r from-sunflower-300 to-sunflower-400 rounded-xl shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-sunflower-900 font-medium">
-                    Human Connection Network Image
-                  </div>
+                <div className="mb-6">
+                  <img 
+                    src="/images/human-connection.png" 
+                    alt="Human connection network illustration showing people collaborating and communicating" 
+                    className="w-full h-64 object-cover rounded-xl shadow-lg"
+                  />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-6">I keep seeing teams rush to adopt AI and automation tools, hoping they'll magically solve collaboration problems. But here's what I've learned after a decade of working with product teams: our most powerful advantage isn't in AI usage – it's in our relationships.</p>
@@ -231,10 +232,12 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-navy-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Create Clear Decision Frameworks</h2>
-                <div className="w-full h-64 mb-6 bg-gradient-to-r from-navy-300 to-navy-400 rounded-xl shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-navy-900 font-medium">
-                    Decision Framework Diagram
-                  </div>
+                <div className="mb-6">
+                  <img 
+                    src="/images/decision-frameworks.png" 
+                    alt="Decision framework diagram showing clear decision-making processes and structures" 
+                    className="w-full h-64 object-cover rounded-xl shadow-lg"
+                  />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-4">"We need to implement RACI charts," the engineering director insisted. But after a decade of transforming product organizations, I've learned that decision frameworks need to address three key questions:</p>
@@ -287,10 +290,12 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-rouge-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Enable Strategic Focus</h2>
-                <div className="w-full h-64 mb-6 bg-gradient-to-r from-rouge-300 to-rouge-400 rounded-xl shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-rouge-900 font-medium">
-                    Strategic Focus Visualization
-                  </div>
+                <div className="mb-6">
+                  <img 
+                    src="/images/strategic-focus.jpg" 
+                    alt="Strategic focus visualization showing priority setting and goal alignment" 
+                    className="w-full h-64 object-cover rounded-xl shadow-lg"
+                  />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-6">Your product managers want to be strategic, but they're stuck in back-to-back meetings and overwhelmed with administrative tasks. "Do it all" product management never really worked. But we can help the product managers on our team get closer to it.</p>
@@ -333,10 +338,12 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Customer Centricity</h2>
-                <div className="w-full h-64 mb-6 bg-gradient-to-r from-crystal-300 to-crystal-500 rounded-xl shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-crystal-900 font-medium">
-                    Customer-Centric Design Image
-                  </div>
+                <div className="mb-6">
+                  <img 
+                    src="/images/customer-centricity.png" 
+                    alt="Customer-centric design illustration showing user feedback loops and customer journey mapping" 
+                    className="w-full h-64 object-cover rounded-xl shadow-lg"
+                  />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
                   <p className="mb-6">"Our team is customer-obsessed," leaders often claim. But many companies actually make it harder for product to connect with customers. How can we build a customer-centric company, and what role should AI play in that today?</p>
@@ -376,11 +383,6 @@ const Index = () => {
             <Card className="bg-gradient-to-br from-navy-900 to-navy-800 text-white border-0 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold mb-6">Build Your High-Performing Product Team</h2>
-                <div className="w-full h-48 mb-6 bg-gradient-to-r from-sunflower-400/20 to-crystal-400/20 rounded-xl border border-white/20">
-                  <div className="w-full h-full flex items-center justify-center text-white/80 font-medium">
-                    High-Performance Team Illustration
-                  </div>
-                </div>
                 <div className="prose prose-lg max-w-none text-gray-100 leading-relaxed">
                   <p className="mb-6">Here's what I've learned after working with dozens of product teams: excellence isn't about having the perfect tool or process. It's about <a href="https://jennywanger.com/articles/product-culture/" className="text-crystal-300 hover:text-crystal-200 font-medium">building systems</a> that reinforce each other.</p>
                   <p className="mb-4">Think about the product teams you admire. They don't just have great roadmap tools – they have infrastructure that makes roadmapping easy. They don't just do customer research – they have systems that make customer contact natural. They don't just make good decisions – they have frameworks that enable collaboration.</p>
@@ -423,10 +425,12 @@ const Index = () => {
             <Card className="bg-white/80 backdrop-blur-sm border-0 shadow-xl">
               <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">About Jenny Wanger</h2>
-                <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-crystal-400 to-navy-600 rounded-full shadow-lg">
-                  <div className="w-full h-full flex items-center justify-center text-white font-medium text-sm text-center">
-                    Jenny's Photo
-                  </div>
+                <div className="mb-6 flex justify-center">
+                  <img 
+                    src="/images/jenny-headshot.png" 
+                    alt="Jenny Wanger - Product Operations Consultant and Entrepreneur" 
+                    className="w-32 h-32 rounded-full shadow-lg object-cover"
+                  />
                 </div>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed text-center">
                   <p className="mb-4">Jenny is an entrepreneur and <a href="https://jennywanger.com/consulting" className="text-crystal-600 hover:text-crystal-700 font-medium">product operations consultant</a> who helps product teams trying to make dramatic changes and make it stick. She helps them through fractional VP of Product services, coaching, and her course, <a href="https://www.reforge.com/courses/product-operations-and-infrastructure/details?course_slug=product-operations-and-infrastructure?utm_id=product_operations_infrastructure_jenny&utm_medium=social&utm_source=linkedin&utm_campaign=courses_creators_Q339" className="text-crystal-600 hover:text-crystal-700 font-medium">Product Operations and Infrastructure</a>. Some past clients include the Linux Foundation, Cisco, CompTIA, and GE.</p>
