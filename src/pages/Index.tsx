@@ -6,7 +6,7 @@ import { useToast } from "@/hooks/use-toast";
 import EmailCapture from "@/components/EmailCapture";
 import AbstractShapes from "@/components/AbstractShapes";
 import TableOfContents from "@/components/TableOfContents";
-import heroBanner from "@/assets/hero-banner.jpg";
+import bannerImage from "@/assets/banner-5.jpg";
 
 const Index = () => {
   const { toast } = useToast();
@@ -22,7 +22,7 @@ const Index = () => {
       <TableOfContents />
       
       {/* Hero Banner */}
-      <header className="relative z-10 h-96 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${heroBanner})` }}>
+      <header className="relative z-10 h-96 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bannerImage})` }}>
         <div className="absolute inset-0 bg-navy-900/40"></div>
         <div className="relative z-10 h-full flex items-center justify-center px-6">
           <div className="text-center">
