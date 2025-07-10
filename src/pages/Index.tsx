@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -10,6 +11,11 @@ import heroBanner from "@/assets/hero-banner.jpg";
 
 const Index = () => {
   const { toast } = useToast();
+
+  const scrollToSection = (sectionId: string) => {
+    const el = document.getElementById(sectionId);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-sunflower-50 via-white to-crystal-50 font-raleway relative overflow-hidden">
@@ -60,16 +66,21 @@ const Index = () => {
                 <p className="text-lg text-gray-700 mb-8">Through my work transforming product organizations, I've identified six critical systems that determine a team's success:</p>
                 <div className="grid md:grid-cols-2 gap-6 mb-8">
                   {[
-                    { number: "01", title: "Infrastructure", desc: "The foundation that enables effective work", color: "crystal" },
-                    { number: "02", title: "Self-Improvement", desc: "The ability to evolve and adapt", color: "moss" },
-                    { number: "03", title: "Human Connection", desc: "The relationships that drive innovation", color: "sunflower" },
-                    { number: "04", title: "Decision Frameworks", desc: "The structures that enable clear choices", color: "navy" },
-                    { number: "05", title: "Strategic Focus", desc: "The capacity to work on what matters most", color: "rouge" },
-                    { number: "06", title: "Customer Centricity", desc: "The systems for staying focused on user needs", color: "crystal" },
+                    { number: "01", title: "Infrastructure", desc: "The foundation that enables effective work", color: "crystal", sectionId: "infrastructure" },
+                    { number: "02", title: "Self-Improvement", desc: "The ability to evolve and adapt", color: "moss", sectionId: "self-improvement" },
+                    { number: "03", title: "Human Connection", desc: "The relationships that drive innovation", color: "sunflower", sectionId: "human-connection" },
+                    { number: "04", title: "Decision Frameworks", desc: "The structures that enable clear choices", color: "navy", sectionId: "decision-frameworks" },
+                    { number: "05", title: "Strategic Focus", desc: "The capacity to work on what matters most", color: "rouge", sectionId: "strategic-focus" },
+                    { number: "06", title: "Customer Centricity", desc: "The systems for staying focused on user needs", color: "crystal", sectionId: "customer-centricity" },
                   ].map((system, index) => (
                     <div key={index} className={`p-6 rounded-xl bg-gradient-to-br from-${system.color}-100 to-${system.color}-200 border-l-4 border-${system.color}-500`}>
                       <div className={`text-2xl font-bold text-${system.color}-700 mb-2`}>{system.number}</div>
-                      <h3 className={`text-xl font-semibold text-${system.color}-900 mb-2`}>{system.title}</h3>
+                      <button 
+                        onClick={() => scrollToSection(system.sectionId)}
+                        className={`text-xl font-semibold text-${system.color}-900 mb-2 hover:text-${system.color}-700 transition-colors cursor-pointer text-left`}
+                      >
+                        {system.title}
+                      </button>
                       <p className="text-gray-700">{system.desc}</p>
                     </div>
                   ))}
