@@ -87,14 +87,14 @@ const Index = () => {
           {/* System 1: Infrastructure */}
           <section id="infrastructure" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
-              <CardContent className="p-0">
+              <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Build Infrastructure Beyond Tools</h2>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                   <p className="mb-4">"We just need a better roadmapping tool." Sound familiar? Yet I've seen too many teams implement new tools and see no meaningful improvement in their performance (or even use of the tool). It takes more than a tool to change your <a href="https://jennywanger.com/articles/product-culture/" className="text-crystal-600 hover:text-crystal-700 font-medium">product culture</a>.</p>
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="/images/infrastructure.png" 
+                    src="./images/infrastructure.png" 
                     alt="Infrastructure systems illustration showing interconnected tools and processes" 
                     className="w-full h-auto object-contain"
                   />
@@ -137,14 +137,14 @@ const Index = () => {
           {/* System 2: Self-Improvement */}
           <section id="self-improvement" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-moss-500 shadow-xl">
-              <CardContent className="p-0">
+              <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Self-Improvement</h2>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                   <p className="mb-6">When product teams struggle, leaders often rush to implement solutions. But what if your team already knows what needs to change - they just need the right environment to make it happen?</p>
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="/images/self-improvement.png" 
+                    src="./images/self-improvement.png" 
                     alt="Self-improvement process illustration with feedback loops and team collaboration" 
                     className="w-full h-auto object-contain"
                   />
@@ -183,14 +183,14 @@ const Index = () => {
           {/* System 3: Human Connection */}
           <section id="human-connection" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-sunflower-500 shadow-xl">
-              <CardContent className="p-0">
+              <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Prioritize Human Connection</h2>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                   <p className="mb-6">I keep seeing teams rush to adopt AI and automation tools, hoping they'll magically solve collaboration problems. But here's what I've learned after a decade of working with product teams: our most powerful advantage isn't in AI usage – it's in our relationships.</p>
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="/images/human-connection.png" 
+                    src="./images/human-connection.png" 
                     alt="Human connection network illustration showing people collaborating and communicating" 
                     className="w-full h-auto object-contain"
                   />
@@ -232,7 +232,7 @@ const Index = () => {
           {/* System 4: Decision Frameworks */}
           <section id="decision-frameworks" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-navy-500 shadow-xl">
-              <CardContent className="p-0">
+              <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Create Clear Decision Frameworks</h2>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                   <p className="mb-4">"We need to implement RACI charts," the engineering director insisted. But after a decade of transforming product organizations, I've learned that decision frameworks need to address three key questions:</p>
@@ -244,7 +244,7 @@ const Index = () => {
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="/images/decision-frameworks.png" 
+                    src="./images/decision-frameworks.png" 
                     alt="Decision framework diagram showing clear decision-making processes and structures" 
                     className="w-full h-auto object-contain"
                   />
@@ -291,14 +291,14 @@ const Index = () => {
           {/* System 5: Strategic Focus */}
           <section id="strategic-focus" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-rouge-500 shadow-xl">
-              <CardContent className="p-0">
+              <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Enable Strategic Focus</h2>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                   <p className="mb-6">Your product managers want to be strategic, but they're stuck in back-to-back meetings and overwhelmed with administrative tasks. "Do it all" product management never really worked. But we can help the product managers on our team get closer to it.</p>
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="/images/strategic-focus.jpg" 
+                    src="./images/strategic-focus.jpg" 
                     alt="Strategic focus visualization showing priority setting and goal alignment" 
                     className="w-full h-auto object-contain"
                   />
@@ -340,14 +340,14 @@ const Index = () => {
           {/* System 6: Customer Centricity */}
           <section id="customer-centricity" className="mb-16">
             <Card className="bg-white/80 backdrop-blur-sm border-l-8 border-crystal-500 shadow-xl">
-              <CardContent className="p-0">
+              <CardContent className="p-8">
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">Design for Customer Centricity</h2>
                 <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed mb-8">
                   <p className="mb-6">"Our team is customer-obsessed," leaders often claim. But many companies actually make it harder for product to connect with customers. How can we build a customer-centric company, and what role should AI play in that today?</p>
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="/images/customer-centricity.png" 
+                    src="./images/customer-centricity.png" 
                     alt="Customer-centric design illustration showing user feedback loops and customer journey mapping" 
                     className="w-full h-auto object-contain"
                   />
@@ -432,7 +432,7 @@ const Index = () => {
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">About Jenny Wanger</h2>
                 <div className="mb-6 flex justify-center">
                   <img 
-                    src="/images/jenny-headshot.png" 
+                    src="./images/jenny-headshot.png" 
                     alt="Jenny Wanger - Product Operations Consultant and Entrepreneur" 
                     className="w-40 h-40 rounded-full shadow-lg object-cover"
                   />
