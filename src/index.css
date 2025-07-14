@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -102,4 +103,50 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@layer utilities {
+  /* Gentle hover effects */
+  .hover-lift {
+    @apply transition-all duration-300 ease-out hover:transform hover:-translate-y-1 hover:shadow-lg;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 ease-out hover:shadow-md hover:shadow-crystal-200/50;
+  }
+
+  /* Smooth link transitions */
+  .smooth-link {
+    @apply transition-all duration-200 ease-out hover:text-crystal-600 hover:underline decoration-2 underline-offset-4;
+  }
+
+  /* Card animations */
+  .card-hover {
+    @apply transition-all duration-300 ease-out hover:shadow-xl hover:shadow-navy-100/20 hover:transform hover:-translate-y-2;
+  }
+
+  /* Button animations */
+  .btn-animate {
+    @apply transition-all duration-200 ease-out transform hover:scale-105 active:scale-95;
+  }
+
+  /* Scroll animations */
+  .scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+
+  .scroll-animate.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Stagger animation delays */
+  .stagger-1 { animation-delay: 0.1s; }
+  .stagger-2 { animation-delay: 0.2s; }
+  .stagger-3 { animation-delay: 0.3s; }
+  .stagger-4 { animation-delay: 0.4s; }
+  .stagger-5 { animation-delay: 0.5s; }
+  .stagger-6 { animation-delay: 0.6s; }
 }
