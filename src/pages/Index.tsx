@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -94,7 +95,7 @@ const Index = () => {
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="./images/infrastructure.png" 
+                    src="/images/infrastructure.png" 
                     alt="Infrastructure systems illustration showing interconnected tools and processes" 
                     className="w-full h-auto object-contain"
                   />
@@ -144,7 +145,7 @@ const Index = () => {
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="./images/self-improvement.png" 
+                    src="/images/self-improvement.png" 
                     alt="Self-improvement process illustration with feedback loops and team collaboration" 
                     className="w-full h-auto object-contain"
                   />
@@ -190,7 +191,7 @@ const Index = () => {
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="./images/human-connection.png" 
+                    src="/images/human-connection.png" 
                     alt="Human connection network illustration showing people collaborating and communicating" 
                     className="w-full h-auto object-contain"
                   />
@@ -244,7 +245,7 @@ const Index = () => {
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="./images/decision-frameworks.png" 
+                    src="/images/decision-frameworks.png" 
                     alt="Decision framework diagram showing clear decision-making processes and structures" 
                     className="w-full h-auto object-contain"
                   />
@@ -298,7 +299,7 @@ const Index = () => {
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="./images/strategic-focus.jpg" 
+                    src="/images/strategic-focus.jpg" 
                     alt="Strategic focus visualization showing priority setting and goal alignment" 
                     className="w-full h-auto object-contain"
                   />
@@ -347,7 +348,7 @@ const Index = () => {
                 </div>
                 <div className="w-full mb-8">
                   <img 
-                    src="./images/customer-centricity.png" 
+                    src="/images/customer-centricity.png" 
                     alt="Customer-centric design illustration showing user feedback loops and customer journey mapping" 
                     className="w-full h-auto object-contain"
                   />
@@ -432,7 +433,7 @@ const Index = () => {
                 <h2 className="text-3xl font-bold text-navy-900 mb-6">About Jenny Wanger</h2>
                 <div className="mb-6 flex justify-center">
                   <img 
-                    src="./images/jenny-headshot.png" 
+                    src="/images/jenny-headshot.png" 
                     alt="Jenny Wanger - Product Operations Consultant and Entrepreneur" 
                     className="w-40 h-40 rounded-full shadow-lg object-cover"
                   />
