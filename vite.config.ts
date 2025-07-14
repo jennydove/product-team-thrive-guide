@@ -1,21 +1,20 @@
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Set base path for GitHub Pages deployment
-  base: process.env.NODE_ENV === 'production' ? '/product-team-thrive-guide/' : '/',
+  // ← use Vite's mode, not NODE_ENV
+  base: mode === 'production'
+    ? '/product-team-thrive-guide/'
+    : '/',
   server: {
     host: "::",
     port: 8080,
   },
   plugins: [
     react(),
-    mode === 'development' &&
-    componentTagger(),
+    mode === 'development' && componentTagger(),
   ].filter(Boolean),
   resolve: {
     alias: {
