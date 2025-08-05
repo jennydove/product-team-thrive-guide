@@ -35,9 +35,15 @@ const Index = () => {
         {/* Base overlay */}
         <div className="absolute inset-0 bg-navy-900/40"></div>
         
-        {/* Gradient mask that blends into page background */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-sunflower-50/90"></div>
-        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-sunflower-50 to-transparent"></div>
+        {/* Hexagon texture overlay */}
+        <div className="absolute inset-0 opacity-10" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.3'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '30px 30px'
+        }}></div>
+        
+        {/* Gradient mask that blends into page background - using brand color */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-crystal-100/90"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-crystal-50 to-transparent"></div>
         
         {/* Brand Color Accent Bars */}
         <div className="absolute left-0 top-1/4 w-2 h-32 bg-gradient-to-b from-crystal-500 via-sunflower-500 to-moss-500 opacity-80"></div>
@@ -48,66 +54,6 @@ const Index = () => {
           <div className="absolute top-10 left-20 w-16 h-16 border-2 border-crystal-300 rotate-45"></div>
           <div className="absolute top-32 right-32 w-12 h-12 border-2 border-sunflower-300 rotate-12"></div>
           <div className="absolute bottom-20 left-1/4 w-8 h-8 border-2 border-moss-300 rotate-45"></div>
-        </div>
-        
-        {/* Six Systems Preview Cards - Floating */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Left side systems */}
-          <div className="absolute left-8 top-16 transform -rotate-3">
-            <FadeIn delay={0.5}>
-              <div className="bg-crystal-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-crystal-300/50">
-                <div className="text-crystal-700 font-bold text-sm">01</div>
-                <div className="text-crystal-900 text-xs">Infrastructure</div>
-              </div>
-            </FadeIn>
-          </div>
-          
-          <div className="absolute left-16 bottom-24 transform rotate-2">
-            <FadeIn delay={0.7}>
-              <div className="bg-moss-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-moss-300/50">
-                <div className="text-moss-700 font-bold text-sm">02</div>
-                <div className="text-moss-900 text-xs">Self-Improvement</div>
-              </div>
-            </FadeIn>
-          </div>
-          
-          {/* Right side systems */}
-          <div className="absolute right-8 top-20 transform rotate-3">
-            <FadeIn delay={0.6}>
-              <div className="bg-sunflower-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-sunflower-300/50">
-                <div className="text-sunflower-700 font-bold text-sm">03</div>
-                <div className="text-sunflower-900 text-xs">Human Connection</div>
-              </div>
-            </FadeIn>
-          </div>
-          
-          <div className="absolute right-16 bottom-32 transform -rotate-2">
-            <FadeIn delay={0.8}>
-              <div className="bg-navy-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-navy-300/50">
-                <div className="text-navy-700 font-bold text-sm">04</div>
-                <div className="text-navy-900 text-xs">Decision Frameworks</div>
-              </div>
-            </FadeIn>
-          </div>
-          
-          {/* Bottom systems */}
-          <div className="absolute bottom-8 left-1/3 transform rotate-1">
-            <FadeIn delay={0.9}>
-              <div className="bg-rouge-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-rouge-300/50">
-                <div className="text-rouge-700 font-bold text-sm">05</div>
-                <div className="text-rouge-900 text-xs">Strategic Focus</div>
-              </div>
-            </FadeIn>
-          </div>
-          
-          <div className="absolute bottom-12 right-1/3 transform -rotate-1">
-            <FadeIn delay={1.0}>
-              <div className="bg-crystal-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-crystal-300/50">
-                <div className="text-crystal-700 font-bold text-sm">06</div>
-                <div className="text-crystal-900 text-xs">Customer Centricity</div>
-              </div>
-            </FadeIn>
-          </div>
         </div>
         
         <div className="relative z-10 h-full flex items-center justify-center px-6">
