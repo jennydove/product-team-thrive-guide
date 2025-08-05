@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,7 +7,6 @@ import { FadeIn, SlideUp, StaggerChildren, GentlePulse } from "@/components/ui/a
 import EmailCapture from "@/components/EmailCapture";
 import AbstractShapes from "@/components/AbstractShapes";
 import TableOfContents from "@/components/TableOfContents";
-import bannerImage from "/lovable-uploads/944b9e0e-5b30-4238-b3a3-dde82f04cbe1.png";
 
 const Index = () => {
   const { toast } = useToast();
@@ -24,7 +22,7 @@ const Index = () => {
       <TableOfContents />
       
       {/* Hero Banner */}
-      <header className="relative z-10 h-96 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bannerImage})` }}>
+      <header className="relative z-10 h-96 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(/lovable-uploads/944b9e0e-5b30-4238-b3a3-dde82f04cbe1.png)` }}>
         {/* Base overlay */}
         <div className="absolute inset-0 bg-navy-900/30"></div>
         
