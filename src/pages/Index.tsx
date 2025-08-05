@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -7,7 +8,7 @@ import { FadeIn, SlideUp, StaggerChildren, GentlePulse } from "@/components/ui/a
 import EmailCapture from "@/components/EmailCapture";
 import AbstractShapes from "@/components/AbstractShapes";
 import TableOfContents from "@/components/TableOfContents";
-import bannerImage from "@/assets/banner-5.jpg";
+import bannerImage from "/lovable-uploads/944b9e0e-5b30-4238-b3a3-dde82f04cbe1.png";
 
 const Index = () => {
   const { toast } = useToast();
@@ -24,7 +25,17 @@ const Index = () => {
       
       {/* Hero Banner */}
       <header className="relative z-10 h-96 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${bannerImage})` }}>
-        <div className="absolute inset-0 bg-navy-900/40"></div>
+        {/* Base overlay */}
+        <div className="absolute inset-0 bg-navy-900/30"></div>
+        
+        {/* Gradient mask that blends into page background */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-sunflower-50/90"></div>
+        <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-sunflower-50 to-transparent"></div>
+        
+        {/* Side gradients for organic blend */}
+        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-sunflower-50/80 via-sunflower-50/40 to-transparent"></div>
+        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-crystal-50/80 via-crystal-50/40 to-transparent"></div>
+        
         <div className="relative z-10 h-full flex items-center justify-center px-6">
           <div className="text-center">
             <FadeIn delay={0.2}>
