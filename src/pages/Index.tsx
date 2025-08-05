@@ -16,6 +16,15 @@ const Index = () => {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
+  const sixSystems = [
+    { number: "01", title: "Infrastructure", color: "crystal" },
+    { number: "02", title: "Self-Improvement", color: "moss" },
+    { number: "03", title: "Human Connection", color: "sunflower" },
+    { number: "04", title: "Decision Frameworks", color: "navy" },
+    { number: "05", title: "Strategic Focus", color: "rouge" },
+    { number: "06", title: "Customer Centricity", color: "crystal" },
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-sunflower-50 via-white to-crystal-50 font-raleway relative overflow-hidden">
       <AbstractShapes />
@@ -24,22 +33,96 @@ const Index = () => {
       {/* Hero Banner */}
       <header className="relative z-10 h-96 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(/lovable-uploads/944b9e0e-5b30-4238-b3a3-dde82f04cbe1.png)` }}>
         {/* Base overlay */}
-        <div className="absolute inset-0 bg-navy-900/30"></div>
+        <div className="absolute inset-0 bg-navy-900/40"></div>
         
         {/* Gradient mask that blends into page background */}
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-sunflower-50/90"></div>
         <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-sunflower-50 to-transparent"></div>
         
-        {/* Side gradients for organic blend */}
-        <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-sunflower-50/80 via-sunflower-50/40 to-transparent"></div>
-        <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-crystal-50/80 via-crystal-50/40 to-transparent"></div>
+        {/* Brand Color Accent Bars */}
+        <div className="absolute left-0 top-1/4 w-2 h-32 bg-gradient-to-b from-crystal-500 via-sunflower-500 to-moss-500 opacity-80"></div>
+        <div className="absolute right-0 top-1/3 w-2 h-24 bg-gradient-to-b from-rouge-500 via-navy-500 to-crystal-500 opacity-80"></div>
+        
+        {/* Geometric Pattern Overlay */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-20 w-16 h-16 border-2 border-crystal-300 rotate-45"></div>
+          <div className="absolute top-32 right-32 w-12 h-12 border-2 border-sunflower-300 rotate-12"></div>
+          <div className="absolute bottom-20 left-1/4 w-8 h-8 border-2 border-moss-300 rotate-45"></div>
+        </div>
+        
+        {/* Six Systems Preview Cards - Floating */}
+        <div className="absolute inset-0 pointer-events-none">
+          {/* Left side systems */}
+          <div className="absolute left-8 top-16 transform -rotate-3">
+            <FadeIn delay={0.5}>
+              <div className="bg-crystal-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-crystal-300/50">
+                <div className="text-crystal-700 font-bold text-sm">01</div>
+                <div className="text-crystal-900 text-xs">Infrastructure</div>
+              </div>
+            </FadeIn>
+          </div>
+          
+          <div className="absolute left-16 bottom-24 transform rotate-2">
+            <FadeIn delay={0.7}>
+              <div className="bg-moss-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-moss-300/50">
+                <div className="text-moss-700 font-bold text-sm">02</div>
+                <div className="text-moss-900 text-xs">Self-Improvement</div>
+              </div>
+            </FadeIn>
+          </div>
+          
+          {/* Right side systems */}
+          <div className="absolute right-8 top-20 transform rotate-3">
+            <FadeIn delay={0.6}>
+              <div className="bg-sunflower-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-sunflower-300/50">
+                <div className="text-sunflower-700 font-bold text-sm">03</div>
+                <div className="text-sunflower-900 text-xs">Human Connection</div>
+              </div>
+            </FadeIn>
+          </div>
+          
+          <div className="absolute right-16 bottom-32 transform -rotate-2">
+            <FadeIn delay={0.8}>
+              <div className="bg-navy-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-navy-300/50">
+                <div className="text-navy-700 font-bold text-sm">04</div>
+                <div className="text-navy-900 text-xs">Decision Frameworks</div>
+              </div>
+            </FadeIn>
+          </div>
+          
+          {/* Bottom systems */}
+          <div className="absolute bottom-8 left-1/3 transform rotate-1">
+            <FadeIn delay={0.9}>
+              <div className="bg-rouge-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-rouge-300/50">
+                <div className="text-rouge-700 font-bold text-sm">05</div>
+                <div className="text-rouge-900 text-xs">Strategic Focus</div>
+              </div>
+            </FadeIn>
+          </div>
+          
+          <div className="absolute bottom-12 right-1/3 transform -rotate-1">
+            <FadeIn delay={1.0}>
+              <div className="bg-crystal-100/90 backdrop-blur-sm rounded-lg p-3 shadow-lg border border-crystal-300/50">
+                <div className="text-crystal-700 font-bold text-sm">06</div>
+                <div className="text-crystal-900 text-xs">Customer Centricity</div>
+              </div>
+            </FadeIn>
+          </div>
+        </div>
         
         <div className="relative z-10 h-full flex items-center justify-center px-6">
-          <div className="text-center">
+          <div className="text-center max-w-4xl">
             <FadeIn delay={0.2}>
-              <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg bg-gradient-to-r from-crystal-200 via-white to-sunflower-200 bg-clip-text text-transparent">
                 The Six Systems That Help Product Teams Thrive
               </h1>
+            </FadeIn>
+            <FadeIn delay={0.4}>
+              <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 mt-4 border border-white/20">
+                <p className="text-white/90 text-lg">
+                  Move beyond band-aid solutions and build systems that create lasting excellence
+                </p>
+              </div>
             </FadeIn>
           </div>
         </div>
